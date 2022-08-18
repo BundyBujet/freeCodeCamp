@@ -1,0 +1,127 @@
+/* Golobal Variables */
+:root {
+  --small-font: 0.96em;
+  --larg-font: 1.8em;
+  --main-margin: 15px;
+}
+/* Golobal Rules */
+* {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+/* Medias */
+/* Smaller */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  #navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #navbar header {
+    padding: 15px 20px;
+  }
+  #navbar ul {
+    min-width: 99%;
+    border: 1px solid black;
+    height: 168px;
+    overflow-y: auto;
+  }
+  #navbar li {
+    /* text-align: center; */
+    border: 1px solid black;
+    padding: 15px 15px 15px 15px;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  #navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #navbar header {
+    padding: 15px 20px;
+  }
+  #navbar ul {
+    min-width: 99%;
+    border: 1px solid black;
+    height: 168px;
+    overflow-y: auto;
+  }
+  #navbar li {
+    /* text-align: center; */
+    border: 1px solid black;
+    padding: 15px 15px 15px 15px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  #navbar {
+    position: fixed;
+    left: 0;
+    width: 300px;
+    border-right: 3px solid rgb(151, 151, 151);
+    height: 100%;
+  }
+  #main-doc {
+    margin-left: 315px;
+    padding-top: 30px;
+  }
+  #navbar ul {
+    min-width: 99%;
+    border: 0px solid white;
+    height: 100%;
+  }
+  #navbar li {
+    border-top: 1px solid black;
+    border-right: 0px solid #ddd;
+    border-bottom: 0px solid #ddd;
+    border-left: 0px solid #ddd;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+}
+/* navbar */
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+/* section */
+#main-doc {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-section {
+  font-size: var(--small-font);
+}
+header {
+  font-size: var(--larg-font);
+}
+article {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.main-section ul {
+  margin: var(--main-margin);
+}
+.main-section ul li {
+  margin-bottom: 15px;
+}
+code {
+  background-color: #eee;
+  padding: 15px;
+  display: block;
+  border-radius: 5px;
+  white-space: pre-line;
+  font-size: 13px !important;
+}

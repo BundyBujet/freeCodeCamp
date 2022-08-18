@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <h1 id="title">Gaming Survey Form</h1>
+        <p id="description">
+          &quot;What is a man? A miserable little pile of secrets!&quot;
+        </p>
+      </header>
+      <form action="" id="survey-form">
+        <div class="form-div">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="EnterYour Name"
+            required
+          />
+        </div>
+        <div class="form-div">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+        <div class="form-div">
+          <label for="age" id="age-label">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Age"
+            min="12"
+            max="100"
+          />
+        </div>
+        <div class="form-div">
+          <p>What Genres are You Interested in?</p>
+          <select name="dropdown" id="dropdown">
+            <option disabled selected>Select Genres</option>
+            <option value="action">Action</option>
+            <option value="sandbox">SandBox</option>
+            <option value="rpg">Role Playing</option>
+            <option value="racing">Racing</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <p>What do you prefer to Use?</p>
+          <label>
+            <input
+              type="radio"
+              class="game-li"
+              name="prefered-cont"
+              value="keyboard"
+            />
+            Keyboard & mouse.
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="game-li"
+              name="prefered-cont"
+              value="controller"
+            />
+            Controller.
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="game-li"
+              name="prefered-cont"
+              value="motion-cntrl"
+            />
+            Motion Controller.
+          </label>
+        </div>
+        <div class="form-div">
+          <p>Pick Your Favorite Games</p>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="skyrim"
+            />
+            Elder Scroll Skyrim
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="diablo"
+            />
+            Diablo.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="farcry"
+            />
+            FarCry.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="forza"
+            />
+            Forza Horizen.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="spider-man"
+            />
+            Spider-man.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="assassin's creed"
+            />
+            Assassin's Creed.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="Call of Duty"
+            />
+            Call of Duty.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="baldur's Gate"
+            />
+            Baldur's Gate.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="game-li"
+              name="game-list"
+              value="Zelda"
+            />
+            Legend of Zelda.
+          </label>
+        </div>
+        <div class="form-div">
+          <p>Tell Us Why You Love Gaming?</p>
+          <textarea
+            name="comment"
+            rows="10"
+            placeholder="Enter Your Comment here..."
+          ></textarea>
+        </div>
+        <div class="form-div">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
